@@ -25,7 +25,7 @@ class eight_activity : AppCompatActivity() {
     private lateinit var selectedOption : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_seven)
+        setContentView(R.layout.activity_eight)
 
         text1 = findViewById(R.id.text1)
         text2 = findViewById(R.id.text2)
