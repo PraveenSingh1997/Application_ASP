@@ -96,7 +96,7 @@ class three_activity : AppCompatActivity() {
 
             var input1 = text1.setText("")
             var input2 = text2.setText("")
-            var input3 = text2.setText("")
+            var input3 = text3.setText("")
 
         }
     }

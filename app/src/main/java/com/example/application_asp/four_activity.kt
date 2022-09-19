@@ -99,7 +99,7 @@ class four_activity : AppCompatActivity() {
 
             var input1 = text1.setText("")
             var input2 = text2.setText("")
-            var input3 = text2.setText("")
+            var input3 = text3.setText("")
             var input4 = text4.setText("")
 
         }
