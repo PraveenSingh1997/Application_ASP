@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val options = arrayOf("Select","2","3","4","5","6","7","8")
+        val options = arrayOf("Select Number of Digit","2","3","4","5","6","7","8")
 
         option.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 , options)
 

@@ -14,7 +14,10 @@
         android:theme="@style/Theme.Application_ASP"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".splash_screen_activity"
+            android:exported="false" />
+        <activity
+            android:name=".step_activity"
             android:exported="false" />
         <activity
             android:name=".eight_activity"
@@ -37,9 +40,8 @@
         <activity
             android:name=".two_activity"
             android:exported="false" />
-
         <activity
-            android:name=".splash_screen_activity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
