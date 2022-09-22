@@ -1,15 +1,18 @@
 package com.example.application_asp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+
 
 class step_activity : AppCompatActivity() {
 
-     lateinit var steps : TextView
+     private lateinit var steps : TextView
      private lateinit var Next : Button
      private lateinit var showAll : Button
+     private lateinit var input_received : TextView
+     private lateinit var output : TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,39 +21,42 @@ class step_activity : AppCompatActivity() {
         steps = findViewById(R.id.steps)
         Next = findViewById(R.id.Next)
         showAll = findViewById(R.id.show_all)
+        input_received = findViewById(R.id.input_received);
+        output = findViewById(R.id.output)
+
+        steps.setText("nnnnnnnnnnnnnnnn")
 
 
-        val arr: IntArray = intArrayOf(15, 3, 12, 6, -9, 9, 0,-3);
+
+        val intent = intent
+        // receive the value by getStringExtra() method and
+        // key must be same which is send by first activity
+        // receive the value by getStringExtra() method and
+        // key must be same which is send by first activity
+        var str = intent.getStringExtra("message_key")
+        var str2 = intent.getStringExtra("output")
+        var str3 = intent.getStringExtra("steps")
+
+        // display the string into textView
+        // display the string into textView
+         input_received.setText(str)
+        //output.setText(str2.toString())
+
+        output.text = str2.toString()
+        val inputs = str.toString()
+        val arr = inputs.map { it.code }.toTypedArray()
+        //val arr: IntArray = intArrayOf(15, 3, 12, 6, -9, 9, 0);
+        steps.text = str3.toString()
 
 
-        val lastIndex: Int = arr.size - 1
-        var a : Int  = 0
-        for (i in 1..lastIndex) {
 
-            print("Step $i: [")
-            steps.append("Step $i : [")
-            val temp: Int = arr[i]
-            var holePosition: Int = i
 
-            while(holePosition > 0 && arr[holePosition - 1] > temp) {
-                arr[holePosition] = arr[holePosition - 1]
-                holePosition--
+
+
+
+
+            }
             }
 
-            arr[holePosition] = temp
-            for (i in 0..lastIndex) {
-               val num = arr[i]
-               steps.append("$num ,")
-
-            }
-
-            steps.append("]")
-            steps.append("\n")
-            steps.append("\n")
-
-
-            }
-            }
-            }
 
 

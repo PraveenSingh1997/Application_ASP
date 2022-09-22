@@ -14,8 +14,8 @@
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/input_received"
 
-        android:text = "Inputs"
         android:padding="20dp"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,6 +27,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:scrollbars="vertical"
         android:maxLines="15"
         android:singleLine="false"
         android:textSize="20dp"
@@ -39,8 +40,9 @@
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:id="@+id/output"
         android:text = "Output"
+
         android:padding="20dp"
         android:textSize="30sp"
         android:textStyle="bold"

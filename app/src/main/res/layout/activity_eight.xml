@@ -6,6 +6,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,10 +25,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:inputType="number"
             android:hint="22"
+            android:maxWidth="40dp"
             android:textSize="20dp"
             android:textColor="#000000"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/edit_text_border" />
 
 
@@ -38,8 +41,9 @@
             android:layout_gravity="center"
             android:textColor="#000000"
             android:hint="22"
+            android:inputType="number"
             android:textSize="20dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/edit_text_border" />
         <EditText
             android:id="@+id/text3"
@@ -47,7 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="#000000"
-            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
             android:hint="22"
             android:textSize="20dp"
             android:background="@drawable/edit_text_border" />
@@ -58,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="#000000"
-            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
             android:hint="22"
             android:textSize="20dp"
 
@@ -71,7 +77,8 @@
             android:layout_gravity="center"
             android:textColor="#000000"
             android:hint="22"
-            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
             android:textSize="20dp"
 
             android:background="@drawable/edit_text_border" />
@@ -83,7 +90,8 @@
             android:layout_gravity="center"
             android:textColor="#000000"
             android:hint="22"
-            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
             android:textSize="20dp"
 
             android:background="@drawable/edit_text_border" />
@@ -94,9 +102,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="#000000"
+            android:inputType="number"
             android:hint="22"
             android:textSize="20dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="10dp"
 
 
             android:background="@drawable/edit_text_border" />
@@ -108,7 +117,7 @@
             android:layout_gravity="center"
             android:textColor="#000000"
             android:hint="22"
-
+            android:inputType="number"
             android:textSize="20dp"
 
             android:background="@drawable/edit_text_border" />
@@ -135,15 +144,24 @@
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
 
             android:background="@drawable/edit_text_border"
             android:text="reset">
         </Button>
+        <Button
+            android:id="@+id/show_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/edit_text_border"
+            android:text="Show steps">
+        </Button>
 
         <Button
             android:id="@+id/run"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_border"
@@ -178,6 +196,14 @@
         android:textSize="30sp"
         android:hint="Output"
         android:id="@+id/result"
+        />
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="Output"
+        android:id="@+id/steps"
         >
 
 

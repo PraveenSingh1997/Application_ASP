@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private lateinit var option : Spinner
+    private lateinit var about_us : Button
     //private lateinit var selectedOption : TextView
 
 
@@ -28,9 +29,18 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+        about_us = findViewById(R.id.about_us)
         option = findViewById(R.id.option)
         //selectedOption = findViewById(R.id.selectedOption)
+
+        about_us.setOnClickListener { view: View ->
+
+            val intent = Intent(this, about_us_activity::class.java)
+
+            startActivity(intent)
+
+
+        }
 
 
 
